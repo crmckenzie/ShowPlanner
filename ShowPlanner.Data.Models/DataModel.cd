@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ShowPlanner.Data.Models.Show">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Show.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tickets" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ShowPlanner.Data.Models.Performance">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgAAAAAAAAAAAAAAAAAAAgAIQAkAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Performance.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Performer" />
+      <Property Name="Show" />
+      <Property Name="Stage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ShowPlanner.Data.Models.Stage">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAIAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Stage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Venue" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Showings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ShowPlanner.Data.Models.Venue">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Venue.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Stages" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ShowPlanner.Data.Models.Performer">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAwAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Performer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Performances" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ShowPlanner.Data.Models.Ticket">
+    <Position X="6.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAQAAAAAAAAAAABAAAAAEABAAAAAAAAABAAA=</HashCode>
+      <FileName>Ticket.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SoldTo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ShowPlanner.Data.Models.Customer">
+    <Position X="7" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAQAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tickets" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
