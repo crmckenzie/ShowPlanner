@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using Simple.Validation;
 
-namespace Sextant.Common.Commands
+namespace ShowPlanner.Commands
 {
     public class RequestValidationCommandDecorator<TRequest, TResponse> : ICommand<TRequest, TResponse>
     {

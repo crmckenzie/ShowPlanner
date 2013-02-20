@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{663AA8B1-419C-4844-8F3A-D7C76A68D0BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShowPlanner.Commands.Unit.Tests</RootNamespace>
+    <AssemblyName>ShowPlanner.Commands.Unit.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FizzWare.NBuilder">
+      <HintPath>..\packages\NBuilder.3.0.1.1\lib\FizzWare.NBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute">
+      <HintPath>..\packages\NSubstitute.1.5.0.0\lib\NET40\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.DbConfig">
+      <HintPath>..\packages\PPA.DbConfig.1.0.26\lib\net35\PPA.DbConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Extensions">
+      <HintPath>..\packages\PPA.Extensions.1.0.21\lib\net40\PPA.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Logging">
+      <HintPath>..\packages\PPA.Logging.1.0.4\lib\net40\PPA.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Models">
+      <HintPath>..\packages\PPA.Models.0.1.2\lib\net40\PPA.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Repository">
+      <HintPath>..\packages\PPA.Repository.0.4.2\lib\net40\PPA.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Utilities">
+      <HintPath>..\packages\PPA.Utilities.1.0.16\lib\net40\PPA.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QueryVenueCommandTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShowPlanner.Commands\ShowPlanner.Commands.csproj">
+      <Project>{9129CDCB-20CB-4C1B-BE52-77E57DA87F2C}</Project>
+      <Name>ShowPlanner.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShowPlanner.Data.Models\ShowPlanner.Data.Models.csproj">
+      <Project>{0D632806-223C-4C56-B6E8-F33542959C05}</Project>
+      <Name>ShowPlanner.Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShowPlanner.Data.Orm\ShowPlanner.Data.Orm.csproj">
+      <Project>{07773BB6-AF37-48F1-A671-2A4951B21A0F}</Project>
+      <Name>ShowPlanner.Data.Orm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShowPlanner.Lib\ShowPlanner.Lib.csproj">
+      <Project>{71EEB541-C6E8-4E1D-A573-838DB8F19B66}</Project>
+      <Name>ShowPlanner.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

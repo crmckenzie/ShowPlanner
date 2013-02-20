@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ShowPlanner.Data.Models.Show">
-    <Position X="4" Y="5.5" Width="1.5" />
+    <Position X="4" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAwAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Show.cs</FileName>
@@ -11,7 +11,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ShowPlanner.Data.Models.Performance">
-    <Position X="4" Y="2.75" Width="1.5" />
+    <Position X="7" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAgAAAAAAAAAAAAAAAAAAAgAIQAkAAAAAAgAAAAAAAA=</HashCode>
       <FileName>Performance.cs</FileName>
@@ -23,7 +23,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="ShowPlanner.Data.Models.Stage">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="7" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAIAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Stage.cs</FileName>
@@ -36,7 +36,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ShowPlanner.Data.Models.Venue">
-    <Position X="7" Y="0.5" Width="1.5" />
+    <Position X="4" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAAgAAAAAAAA=</HashCode>
       <FileName>Venue.cs</FileName>
@@ -46,7 +46,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ShowPlanner.Data.Models.Performer">
-    <Position X="1" Y="2.5" Width="1.5" />
+    <Position X="7" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAwAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Performer.cs</FileName>
@@ -56,7 +56,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ShowPlanner.Data.Models.Ticket">
-    <Position X="6.75" Y="5.25" Width="1.5" />
+    <Position X="1" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAQAAAAAAAAAAABAAAAAEABAAAAAAAAABAAA=</HashCode>
       <FileName>Ticket.cs</FileName>
@@ -66,7 +66,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="ShowPlanner.Data.Models.Customer">
-    <Position X="7" Y="3" Width="1.5" />
+    <Position X="1" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAQAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>

@@ -1,5 +1,5 @@
 using Ninject;
-using Sextant.Common.Commands;
+using ShowPlanner.Commands;
 
 namespace ShowPlanner.Ninject.Commands
 {

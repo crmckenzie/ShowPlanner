@@ -10,6 +10,8 @@ namespace ShowPlanner.Data.Models
 
         public string Name { get; set; }
 
+        public string Owner { get; set; }
+
         public IList<Stage> Stages { get; set; } 
     }
 }

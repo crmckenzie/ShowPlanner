@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07773BB6-AF37-48F1-A671-2A4951B21A0F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShowPlanner.Data.Orm</RootNamespace>
+    <AssemblyName>ShowPlanner.Data.Orm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.DbConfig">
+      <HintPath>..\packages\PPA.DbConfig.1.0.26\lib\net35\PPA.DbConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Extensions">
+      <HintPath>..\packages\PPA.Extensions.1.0.21\lib\net40\PPA.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Logging">
+      <HintPath>..\packages\PPA.Logging.1.0.4\lib\net40\PPA.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Models">
+      <HintPath>..\packages\PPA.Models.0.1.2\lib\net40\PPA.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Repository">
+      <HintPath>..\packages\PPA.Repository.0.4.2\lib\net40\PPA.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="PPA.Utilities">
+      <HintPath>..\packages\PPA.Utilities.1.0.16\lib\net40\PPA.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mappings\DefaultConfigurationProvider.cs" />
+    <Compile Include="Mappings\RegisterEntitiesConfiguration.cs" />
+    <Compile Include="ObjectContextExtensions.cs" />
+    <Compile Include="ShowPlannerDbContext.cs" />
+    <Compile Include="IConfigurationProvider.cs" />
+    <Compile Include="IEntityMappingConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowPlannerRepository.cs" />
+    <Compile Include="Specifications\AlwaysFalseSpecification.cs" />
+    <Compile Include="Specifications\AlwaysTrueSpecification.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ShowPlanner.Data.Models\ShowPlanner.Data.Models.csproj">
+      <Project>{0D632806-223C-4C56-B6E8-F33542959C05}</Project>
+      <Name>ShowPlanner.Data.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

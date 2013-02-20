@@ -1,6 +1,6 @@
 using System.Security.Principal;
 using Ninject;
-using Sextant.Common.Commands;
+using ShowPlanner.Commands;
 using Simple.Validation;
 
 namespace ShowPlanner.Ninject.Commands

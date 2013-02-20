@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sextant.Common.Commands
+namespace ShowPlanner.Commands
 {
     public interface ICommand<out T>
     {

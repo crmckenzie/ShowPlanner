@@ -1,4 +1,4 @@
-namespace Isg.Lib
+namespace ShowPlanner.Converters
 {
     /// <summary>
     /// Implement using your favorite Dependency Injection framework.

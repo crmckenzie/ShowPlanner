@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Simple.Validation;
 
-namespace Sextant.Common.Commands
+namespace ShowPlanner.Commands
 {
     public interface IValidatedResponse
     {
