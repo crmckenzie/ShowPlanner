@@ -21,12 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowPlanner.Web", "ShowPlan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowPlanner.Commands.Unit.Tests", "ShowPlanner.Commands.Unit.Tests\ShowPlanner.Commands.Unit.Tests.csproj", "{663AA8B1-419C-4844-8F3A-D7C76A68D0BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowPlanner.Builders", "ShowPlanner.Converters\ShowPlanner.Builders.csproj", "{D03E3008-10D3-4594-BF64-08056FBB6F43}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowPlanner.Converters.Unit.Tests", "ShowPlanner.Converters.Unit.Tests\ShowPlanner.Converters.Unit.Tests.csproj", "{330B24AC-FBB5-4D0C-B8D5-A3482BC9622E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowPlanner.Api", "ShowPlanner.Api\ShowPlanner.Api.csproj", "{0E3EC527-27B7-419B-89B2-73C0EE97368A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".markdown", ".markdown", "{BF20BD04-3414-4517-B0F4-981B18C1E3E8}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -70,25 +64,12 @@ Global
 		{663AA8B1-419C-4844-8F3A-D7C76A68D0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{663AA8B1-419C-4844-8F3A-D7C76A68D0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{663AA8B1-419C-4844-8F3A-D7C76A68D0BF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D03E3008-10D3-4594-BF64-08056FBB6F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D03E3008-10D3-4594-BF64-08056FBB6F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D03E3008-10D3-4594-BF64-08056FBB6F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D03E3008-10D3-4594-BF64-08056FBB6F43}.Release|Any CPU.Build.0 = Release|Any CPU
-		{330B24AC-FBB5-4D0C-B8D5-A3482BC9622E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{330B24AC-FBB5-4D0C-B8D5-A3482BC9622E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{330B24AC-FBB5-4D0C-B8D5-A3482BC9622E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{330B24AC-FBB5-4D0C-B8D5-A3482BC9622E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E3EC527-27B7-419B-89B2-73C0EE97368A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E3EC527-27B7-419B-89B2-73C0EE97368A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E3EC527-27B7-419B-89B2-73C0EE97368A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E3EC527-27B7-419B-89B2-73C0EE97368A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{663AA8B1-419C-4844-8F3A-D7C76A68D0BF} = {13C19906-EF7C-4C4A-B98A-4F12A65C73D1}
-		{330B24AC-FBB5-4D0C-B8D5-A3482BC9622E} = {13C19906-EF7C-4C4A-B98A-4F12A65C73D1}
 		{654F4AA7-1934-4D99-AD19-10135C3EEE5B} = {297DEF45-750D-4DF3-9ADC-38CF4887D2A8}
 	EndGlobalSection
 EndGlobal

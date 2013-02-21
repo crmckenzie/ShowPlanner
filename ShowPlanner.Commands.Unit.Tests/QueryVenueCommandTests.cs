@@ -8,8 +8,8 @@ using NSubstitute;
 using NUnit.Framework;
 using PPA.Repository;
 using PPA.Repository.Specifications;
+using ShowPlanner.Builders;
 using ShowPlanner.Commands.Venues;
-using ShowPlanner.Converters;
 using ShowPlanner.Data;
 using ShowPlanner.Data.Models;
 using ShowPlanner.Data.Orm.Specifications;
@@ -24,14 +24,14 @@ namespace ShowPlanner.Commands.Unit.Tests
         {
             this.Database = Substitute.For<IDatabase>();
             this.Repository = Substitute.For<IRepository>();
-            this.BuilderApi = Substitute.For<IBuilder>();
+            this.BuilderApi = Substitute.For<IBuild>();
 
             this.Database.NewRepository().Returns(this.Repository);
 
             this.Command = new QueryVenueCommand(this.Database, this.BuilderApi);
         }
 
-        protected IBuilder BuilderApi { get; set; }
+        protected IBuild BuilderApi { get; set; }
 
         protected IRepository Repository { get; set; }
 

@@ -68,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Venues\QueryResponse.cs" />
+    <Compile Include="QueryResponse.cs" />
     <Compile Include="Venues\QueryVenueCommand.cs" />
     <Compile Include="Venues\QueryVenueRequest.cs" />
     <Compile Include="Venues\VenueDetail.cs" />

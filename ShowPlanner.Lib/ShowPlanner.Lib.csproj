@@ -66,6 +66,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\Build.cs" />
+    <Compile Include="Builders\BuilderNode.cs" />
+    <Compile Include="Builders\IBuild.cs" />
+    <Compile Include="Builders\IBuilder.cs" />
+    <Compile Include="Builders\IBuilderNode.cs" />
+    <Compile Include="Builders\IBuilderProvider.cs" />
     <Compile Include="Commands\AuthorizationCommandDecorator.cs" />
     <Compile Include="Commands\AuthorizationException.cs" />
     <Compile Include="Commands\ICommand.cs" />
@@ -77,12 +83,6 @@
     <Compile Include="Commands\RequestValidationCommandDecorator.cs" />
     <Compile Include="Commands\Response.cs" />
     <Compile Include="Commands\ValidatedResponse.cs" />
-    <Compile Include="Builders\Builder.cs" />
-    <Compile Include="Builders\BuilderNode.cs" />
-    <Compile Include="Builders\IBuild.cs" />
-    <Compile Include="Builders\IBuilder.cs" />
-    <Compile Include="Builders\IBuilderNode.cs" />
-    <Compile Include="Builders\IBuildProvider.cs" />
     <Compile Include="Data\IDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
