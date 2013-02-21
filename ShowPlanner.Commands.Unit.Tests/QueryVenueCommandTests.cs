@@ -8,6 +8,7 @@ using NSubstitute;
 using NUnit.Framework;
 using PPA.Repository;
 using PPA.Repository.Specifications;
+using ShowPlanner.Commands.Venues;
 using ShowPlanner.Converters;
 using ShowPlanner.Data;
 using ShowPlanner.Data.Models;

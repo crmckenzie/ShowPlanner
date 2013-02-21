@@ -67,10 +67,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="QueryVenueCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QueryVenueRequest.cs" />
-    <Compile Include="VenueDetail.cs" />
+    <Compile Include="Venues\QueryResponse.cs" />
+    <Compile Include="Venues\QueryVenueCommand.cs" />
+    <Compile Include="Venues\QueryVenueRequest.cs" />
+    <Compile Include="Venues\VenueDetail.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ShowPlanner.Data.Models\ShowPlanner.Data.Models.csproj">

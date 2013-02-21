@@ -73,17 +73,16 @@
     <Compile Include="Commands\ICommandDecoratorApi.cs" />
     <Compile Include="Commands\ICommandRequestApi.cs" />
     <Compile Include="Commands\IValidatedResponse.cs" />
-    <Compile Include="Commands\QueryResponse.cs" />
     <Compile Include="Commands\Request.cs" />
     <Compile Include="Commands\RequestValidationCommandDecorator.cs" />
     <Compile Include="Commands\Response.cs" />
     <Compile Include="Commands\ValidatedResponse.cs" />
-    <Compile Include="Converters\Builder.cs" />
-    <Compile Include="Converters\BuilderNode.cs" />
-    <Compile Include="Converters\IBuild.cs" />
-    <Compile Include="Converters\IBuilder.cs" />
-    <Compile Include="Converters\IBuilderNode.cs" />
-    <Compile Include="Converters\IBuildProvider.cs" />
+    <Compile Include="Builders\Builder.cs" />
+    <Compile Include="Builders\BuilderNode.cs" />
+    <Compile Include="Builders\IBuild.cs" />
+    <Compile Include="Builders\IBuilder.cs" />
+    <Compile Include="Builders\IBuilderNode.cs" />
+    <Compile Include="Builders\IBuildProvider.cs" />
     <Compile Include="Data\IDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
