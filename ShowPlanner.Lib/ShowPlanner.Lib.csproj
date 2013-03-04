@@ -76,16 +76,19 @@
     <Compile Include="Builders\IBuilderProvider.cs" />
     <Compile Include="Commands\AuthorizationCommandDecorator.cs" />
     <Compile Include="Commands\AuthorizationException.cs" />
+    <Compile Include="Commands\CommandDecorator.cs" />
     <Compile Include="Commands\ICommand.cs" />
     <Compile Include="Commands\ICommandBuilder.cs" />
     <Compile Include="Commands\ICommandDecoratorApi.cs" />
     <Compile Include="Commands\ICommandRequestApi.cs" />
     <Compile Include="Commands\IValidatedResponse.cs" />
+    <Compile Include="Commands\PerformanceCommandDecorator.cs" />
     <Compile Include="Commands\Request.cs" />
     <Compile Include="Commands\RequestValidationCommandDecorator.cs" />
     <Compile Include="Commands\Response.cs" />
     <Compile Include="Commands\ValidatedResponse.cs" />
     <Compile Include="Data\IDatabase.cs" />
+    <Compile Include="Logging\ILogProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

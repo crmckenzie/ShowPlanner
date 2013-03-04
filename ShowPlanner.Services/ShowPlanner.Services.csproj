@@ -4,16 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FD2ED49A-88E0-41B4-9996-D9BCE6F90651}</ProjectGuid>
+    <ProjectGuid>{05ED4018-9005-4C42-94E2-BE8CCC13B597}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ShowPlanner.Ninject</RootNamespace>
-    <AssemblyName>ShowPlanner.Ninject</AssemblyName>
+    <RootNamespace>ShowPlanner.Services</RootNamespace>
+    <AssemblyName>ShowPlanner.Services</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +20,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,18 +28,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net">
-      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject">
-      <HintPath>..\packages\Ninject.3.0.1.10\lib\net40\Ninject.dll</HintPath>
-    </Reference>
-    <Reference Include="Simple.Validation">
-      <HintPath>..\packages\Simple.Validation.0.6.1\lib\net40\Simple.Validation.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,31 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Commands\CommandBuilder.cs" />
-    <Compile Include="Commands\CommandDecoratorApi.cs" />
-    <Compile Include="Commands\CommandRequestApi.cs" />
-    <Compile Include="Commands\Performances\PerformanceCommands.cs" />
+    <Compile Include="IPerformanceService.cs" />
+    <Compile Include="PerformanceDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ShowPlanner.Commands\ShowPlanner.Commands.csproj">
-      <Project>{9129CDCB-20CB-4C1B-BE52-77E57DA87F2C}</Project>
-      <Name>ShowPlanner.Commands</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ShowPlanner.Lib\ShowPlanner.Lib.csproj">
-      <Project>{71EEB541-C6E8-4E1D-A573-838DB8F19B66}</Project>
-      <Name>ShowPlanner.Lib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ShowPlanner.Services\ShowPlanner.Services.csproj">
-      <Project>{05ED4018-9005-4C42-94E2-BE8CCC13B597}</Project>
-      <Name>ShowPlanner.Services</Name>
-    </ProjectReference>
+    <Compile Include="QueryPerformanceRequest.cs" />
+    <Compile Include="QueryResponse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

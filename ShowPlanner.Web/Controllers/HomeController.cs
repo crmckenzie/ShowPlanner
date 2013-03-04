@@ -6,23 +6,23 @@ using System.Web.Mvc;
 
 namespace ShowPlanner.Web.Controllers
 {
-    public partial class HomeController : Controller
+    public class HomeController : Controller
     {
-        public virtual ActionResult Index()
+        public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
             return View();
         }
 
-        public virtual ActionResult About()
+        public ActionResult About()
         {
             ViewBag.Message = "Your app description page.";
 
             return View();
         }
 
-        public virtual ActionResult Contact()
+        public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 

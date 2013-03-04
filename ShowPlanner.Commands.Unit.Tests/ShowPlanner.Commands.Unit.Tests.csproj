@@ -94,6 +94,10 @@
       <Project>{71EEB541-C6E8-4E1D-A573-838DB8F19B66}</Project>
       <Name>ShowPlanner.Lib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ShowPlanner.Services\ShowPlanner.Services.csproj">
+      <Project>{05ED4018-9005-4C42-94E2-BE8CCC13B597}</Project>
+      <Name>ShowPlanner.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

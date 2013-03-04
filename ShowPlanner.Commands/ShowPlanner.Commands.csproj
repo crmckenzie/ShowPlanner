@@ -69,8 +69,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Performances\IPerformanceCommands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QueryResponse.cs" />
     <Compile Include="Venues\QueryVenueCommand.cs" />
     <Compile Include="Venues\QueryVenueRequest.cs" />
     <Compile Include="Venues\VenueDetail.cs" />
@@ -83,6 +83,10 @@
     <ProjectReference Include="..\ShowPlanner.Lib\ShowPlanner.Lib.csproj">
       <Project>{71EEB541-C6E8-4E1D-A573-838DB8F19B66}</Project>
       <Name>ShowPlanner.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShowPlanner.Services\ShowPlanner.Services.csproj">
+      <Project>{05ED4018-9005-4C42-94E2-BE8CCC13B597}</Project>
+      <Name>ShowPlanner.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

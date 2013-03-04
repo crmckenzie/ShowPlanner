@@ -7,6 +7,7 @@ using PPA.Repository.Specifications;
 using ShowPlanner.Builders;
 using ShowPlanner.Data;
 using ShowPlanner.Data.Models;
+using ShowPlanner.Services;
 
 namespace ShowPlanner.Commands.Venues
 {
