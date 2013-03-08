@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using PPA.Repository;
 
 namespace ShowPlanner.Data.Orm
 {
@@ -14,8 +13,6 @@ namespace ShowPlanner.Data.Orm
         {
             _dbContext = dbContext;
         }
-
-        #region IRepository Members
 
         public void Dispose()
         {
@@ -42,11 +39,9 @@ namespace ShowPlanner.Data.Orm
             _dbContext.Set(value.GetType()).Remove(value);
         }
 
-        public ITransaction BeginTransaction()
+        public void Commit()
         {
-            throw new NotImplementedException();
+            _dbContext.SaveChanges();
         }
-
-        #endregion
     }
 }

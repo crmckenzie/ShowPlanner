@@ -38,24 +38,6 @@
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="PPA.DbConfig">
-      <HintPath>..\packages\PPA.DbConfig.1.0.26\lib\net35\PPA.DbConfig.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Extensions">
-      <HintPath>..\packages\PPA.Extensions.1.0.21\lib\net40\PPA.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Logging">
-      <HintPath>..\packages\PPA.Logging.1.0.4\lib\net40\PPA.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Models">
-      <HintPath>..\packages\PPA.Models.0.1.2\lib\net40\PPA.Models.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Repository">
-      <HintPath>..\packages\PPA.Repository.0.4.2\lib\net40\PPA.Repository.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Utilities">
-      <HintPath>..\packages\PPA.Utilities.1.0.16\lib\net40\PPA.Utilities.dll</HintPath>
-    </Reference>
     <Reference Include="Simple.Validation">
       <HintPath>..\packages\Simple.Validation.0.6.1\lib\net40\Simple.Validation.dll</HintPath>
     </Reference>
@@ -88,6 +70,8 @@
     <Compile Include="Commands\Response.cs" />
     <Compile Include="Commands\ValidatedResponse.cs" />
     <Compile Include="Data\IDatabase.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\ITransaction.cs" />
     <Compile Include="Logging\ILogProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

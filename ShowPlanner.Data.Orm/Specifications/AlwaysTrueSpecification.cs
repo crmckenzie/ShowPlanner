@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
-using PPA.Repository.Specifications;
+using Isg.Specification;
 
 namespace ShowPlanner.Data.Orm.Specifications
 {

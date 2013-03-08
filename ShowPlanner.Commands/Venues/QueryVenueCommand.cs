@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PPA.Repository.Specifications;
+using Isg.Specification;
 using ShowPlanner.Builders;
 using ShowPlanner.Data;
 using ShowPlanner.Data.Models;
@@ -26,7 +26,6 @@ namespace ShowPlanner.Commands.Venues
         {
             using (var db = _database.NewRepository())
             {
-
                 var specification = _build
                     .Create<ISpecification<Venue>>()
                     .From(request)

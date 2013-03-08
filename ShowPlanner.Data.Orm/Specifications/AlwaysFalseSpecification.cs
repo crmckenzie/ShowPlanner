@@ -1,6 +1,6 @@
 using System;
 using System.Linq.Expressions;
-using PPA.Repository.Specifications;
+using Isg.Specification;
 
 namespace ShowPlanner.Data.Orm.Specifications
 {

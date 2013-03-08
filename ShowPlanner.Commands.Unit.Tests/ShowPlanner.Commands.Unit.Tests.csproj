@@ -35,6 +35,9 @@
     <Reference Include="FizzWare.NBuilder">
       <HintPath>..\packages\NBuilder.3.0.1.1\lib\FizzWare.NBuilder.dll</HintPath>
     </Reference>
+    <Reference Include="Isg.Specification">
+      <HintPath>..\packages\Isg.Specification.0.1\lib\net40\Isg.Specification.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
     </Reference>
@@ -43,24 +46,6 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.DbConfig">
-      <HintPath>..\packages\PPA.DbConfig.1.0.26\lib\net35\PPA.DbConfig.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Extensions">
-      <HintPath>..\packages\PPA.Extensions.1.0.21\lib\net40\PPA.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Logging">
-      <HintPath>..\packages\PPA.Logging.1.0.4\lib\net40\PPA.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Models">
-      <HintPath>..\packages\PPA.Models.0.1.2\lib\net40\PPA.Models.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Repository">
-      <HintPath>..\packages\PPA.Repository.0.4.2\lib\net40\PPA.Repository.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Utilities">
-      <HintPath>..\packages\PPA.Utilities.1.0.16\lib\net40\PPA.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

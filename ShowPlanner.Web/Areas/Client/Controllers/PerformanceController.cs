@@ -8,7 +8,7 @@ using ShowPlanner.Services;
 
 namespace ShowPlanner.Web.Areas.Client.Controllers
 {
-    public class PerformanceController : Controller, IPerformanceService
+    public partial class PerformanceController : Controller, IPerformanceService
     {
         private readonly IPerformanceCommands _performanceCommands;
 

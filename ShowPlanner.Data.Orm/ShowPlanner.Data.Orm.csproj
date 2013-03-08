@@ -38,26 +38,11 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Isg.Specification">
+      <HintPath>..\packages\Isg.Specification.0.1\lib\net40\Isg.Specification.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.DbConfig">
-      <HintPath>..\packages\PPA.DbConfig.1.0.26\lib\net35\PPA.DbConfig.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Extensions">
-      <HintPath>..\packages\PPA.Extensions.1.0.21\lib\net40\PPA.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Logging">
-      <HintPath>..\packages\PPA.Logging.1.0.4\lib\net40\PPA.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Models">
-      <HintPath>..\packages\PPA.Models.0.1.2\lib\net40\PPA.Models.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Repository">
-      <HintPath>..\packages\PPA.Repository.0.4.2\lib\net40\PPA.Repository.dll</HintPath>
-    </Reference>
-    <Reference Include="PPA.Utilities">
-      <HintPath>..\packages\PPA.Utilities.1.0.16\lib\net40\PPA.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -89,6 +74,10 @@
     <ProjectReference Include="..\ShowPlanner.Data.Models\ShowPlanner.Data.Models.csproj">
       <Project>{0D632806-223C-4C56-B6E8-F33542959C05}</Project>
       <Name>ShowPlanner.Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShowPlanner.Lib\ShowPlanner.Lib.csproj">
+      <Project>{71EEB541-C6E8-4E1D-A573-838DB8F19B66}</Project>
+      <Name>ShowPlanner.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
