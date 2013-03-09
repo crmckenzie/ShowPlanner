@@ -38,7 +38,6 @@ namespace T4MVC
     public class ClientClass
     {
         public readonly string Name = "Client";
-        public ShowPlanner.Web.Areas.Client.Controllers.PerformanceController Performance = new ShowPlanner.Web.Areas.Client.Controllers.T4MVC_PerformanceController();
         public T4MVC.Client.SharedController Shared = new T4MVC.Client.SharedController();
     }
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]

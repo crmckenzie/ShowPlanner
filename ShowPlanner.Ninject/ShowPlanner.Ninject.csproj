@@ -53,9 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NinjectConfiguration.cs" />
     <Compile Include="Commands\CommandBuilder.cs" />
     <Compile Include="Commands\CommandDecoratorApi.cs" />
     <Compile Include="Commands\CommandRequestApi.cs" />
+    <Compile Include="Commands\CommandsModule.cs" />
     <Compile Include="Commands\Performances\PerformanceCommands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
