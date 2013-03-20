@@ -18,7 +18,7 @@
         var defaults = {};
         var settings = $.extend({}, defaults, options);
 
-        var server = options.server || new Server(options);
+        var server = options.server || new ShowPlanner.api.Server(options);
 
         Performances.prototype.query = function (jsonRequest, successHandler) {
             server.post(settings.queryUrl, jsonRequest, successHandler);

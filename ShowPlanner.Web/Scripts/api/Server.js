@@ -31,7 +31,8 @@
 
     // methods
     Server.prototype.post = function (url, data, success) {
-        log("Invoking url: " + url);
+        var self = this;
+        self.log("Invoking url: " + url);
 
         var stringified = JSON.stringify(data);
 
@@ -43,18 +44,20 @@
             contentType: "application/json; charset=utf-8"
         })
             .success(function (response, jqXHR, ajaxOptions) {
-                log("Call to " + url + " succeeded.");
+                self.log("Call to " + url + " succeeded.");
 
                 success(response, jqXHR, ajaxOptions);
             })
             .error(function (event, jqXHR, ajaxOptions, thrownError) {
-                log("Call to " + url + " failed.");
+                self.log("Call to " + url + " failed.");
                 PubSub.publish(ShowPlanner.api.Messages.ApiException, event);
             });
     };
 
     Server.prototype.get = function (url, data, success) {
-        log("Invoking url: " + url);
+        var self = this;
+        
+        self.log("Invoking url: " + url);
 
         var stringified = JSON.stringify(data);
 
@@ -65,11 +68,11 @@
             dataType: "json",
         })
         .success(function (response, jqXHR, ajaxOptions) {
-            log("Call to " + url + " succeeded.");
+            self.log("Call to " + url + " succeeded.");
             success(response, jqXHR, ajaxOptions);
         })
         .error(function (event, jqXHR, ajaxOptions, thrownError) {
-            log("Call to " + url + " failed.");
+            self.log("Call to " + url + " failed.");
             PubSub.publish(ShowPlanner.api.Messages.ApiException, event);
         });
     };

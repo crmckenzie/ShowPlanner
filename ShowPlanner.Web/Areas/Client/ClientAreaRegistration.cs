@@ -23,7 +23,7 @@ namespace ShowPlanner.Web.Areas.Client
 
             context.Routes.MapHttpRoute(
                 name: "ClientApi",
-                routeTemplate: "api/Client/{controller}/{id}",
+                routeTemplate: "api/Client/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

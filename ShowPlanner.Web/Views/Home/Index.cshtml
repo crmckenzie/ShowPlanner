@@ -33,11 +33,11 @@
         $(function() {
 
             var options = {
-              queryUrl: "@Url.Action("~/api/client/Performance/query")"  
-            };
-
+                queryUrl: "@Url.RouteUrl("ClientApi", new { httproute = "", controller = "Performance", action="Query"})"
+                };
+            
             var viewModel = {
-                data: ko.obervableArray([])  
+                data: ko.observableArray([])  
             };
 
             var api = new ShowPlanner.api.Performances(options);

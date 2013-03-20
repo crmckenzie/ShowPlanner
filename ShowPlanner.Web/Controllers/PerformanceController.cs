@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Http;
 using System.Web.Mvc;
-using System.Web.Routing;
 using ShowPlanner.Builders;
 using ShowPlanner.Commands.Performances;
 using ShowPlanner.Services;
 
-namespace ShowPlanner.Web.Areas.Client.Controllers
+namespace ShowPlanner.Web.Controllers
 {
-    public class PerformanceController : ApiController, IPerformanceService
+    public class PerformanceController : Controller
     {
         private readonly IPerformanceCommands _performanceCommands;
         private readonly IBuild _builder;
@@ -22,7 +20,15 @@ namespace ShowPlanner.Web.Areas.Client.Controllers
             _builder = builder;
         }
 
-        public QueryResponse<PerformanceDetail> Search(string term)
+        //
+        // GET: /Performance/
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult Search(string term)
         {
             using (var command = _performanceCommands.Query())
             {
@@ -31,17 +37,18 @@ namespace ShowPlanner.Web.Areas.Client.Controllers
                     .From(term)
                     ;
                 var results = command.Execute(request);
-                return results;
-            }       
-        } 
 
-        public QueryResponse<PerformanceDetail> Query(QueryPerformanceRequest request)
-        {
-            using (var command = _performanceCommands.Query())
-            {
-                var results = command.Execute(request);
-                return results;
-            }
+                var model = _builder
+                    .Create<PerformanceSearchResultsViewModel>()
+                    .From(results);
+
+                return View(model);
+            }       
         }
+
+    }
+
+    public class PerformanceSearchResultsViewModel
+    {
     }
 }
