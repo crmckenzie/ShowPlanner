@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace ShowPlanner.Data.Models
 {
     public class Ticket
@@ -5,6 +7,7 @@ namespace ShowPlanner.Data.Models
         public int? TicketId { get; set; }
 
         public int? ShowId { get; set; }
+        [Required]
         public Show Show { get; set; }
 
         public int? CustomerId { get; set; }
@@ -12,7 +15,7 @@ namespace ShowPlanner.Data.Models
 
         public bool? Sold { get; set; }
 
+        [Required]
         public decimal Price { get; set; }
-
     }
 }

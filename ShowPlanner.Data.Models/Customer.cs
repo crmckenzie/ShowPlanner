@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ShowPlanner.Data.Models
 {
@@ -6,8 +7,9 @@ namespace ShowPlanner.Data.Models
     {
         public int? CustomerId { get; set; }
 
-        public string Name { get; set; }
+        public IList<Ticket> Tickets { get; set; }
 
-        public IList<Ticket> Tickets { get; set; } 
+        [Required]
+        public string Name { get; set; }
     }
 }

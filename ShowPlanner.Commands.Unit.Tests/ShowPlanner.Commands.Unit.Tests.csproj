@@ -56,6 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PurchaseTicketCommandTests.cs" />
     <Compile Include="QueryPerformanceCommandTests.cs" />
     <Compile Include="QueryVenueCommandTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
